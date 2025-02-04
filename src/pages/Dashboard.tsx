@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../api/supabase'; // Ensure this import is correct
 import '../Dashboard.css';
 
@@ -152,7 +152,7 @@ const Dashboard = () => {
               <td>
                 {/* Edit button */}
                 {editingProject === project.id ? (
-                  <button onClick={() => handleUpdateProject(project.id, updatedProject, updatedDescription)}>
+                  <button className='Save-Button' onClick={() => handleUpdateProject(project.id, updatedProject, updatedDescription)}>
                     Save
                   </button>
                 ) : (

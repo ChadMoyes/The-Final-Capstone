@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { supabase } from '../api/supabase'; // Ensure this import is correct
 
 const SignUp = () => {
@@ -8,7 +8,8 @@ const SignUp = () => {
 
   // This handles the users sign up
   const handleSignUp = async () => {
-    const { user, error } = await supabase.auth.signUp({
+    // user, error 
+    const { error } = await supabase.auth.signUp({
       email,
       password,
     });
