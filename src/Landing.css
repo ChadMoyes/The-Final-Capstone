@@ -1,0 +1,48 @@
+.landing-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Dark blue gradient */
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .landing-text {
+    font-size: 3rem;
+    opacity: 0;
+    transform: translateY(30px); /* Start from the bottom */
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .landing-text.show {
+    opacity: 1;
+    transform: translateY(0); /* "Raise" the text */
+  }
+  
+  .landing-text.hide {
+    opacity: 0;
+    transform: translateY(30px); /* Hide the text */
+  }
+  
+  .landing-button {
+    margin-top: 30px;
+  }
+  
+  .sign-in-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff6b6b; /* Vibrant red for call-to-action */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #ff3b3b; /* Slightly darker red on hover */
+  }
+  
